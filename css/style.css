@@ -1,0 +1,176 @@
+html,body{
+    min-height: 100%;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+.sec-1{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.sec-1 video{
+    display: flex;
+}
+
+
+.sec-1 h1{
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.cont-1{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.crazy {
+    animation: color-change 1s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: black; }
+    50% { color: blue; }
+    70% { color: red; }
+    100% { color: black; }
+  }
+
+
+.sec-1 p{
+}
+
+
+.sec-1 img{
+
+}
+
+.sec-2{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    background-color: black;
+}
+
+.sec-2 h1{
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: white;
+}
+
+
+.sec-3{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.sec-3 h1{
+    font-size: 1.25vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.sec-4{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    background-color: black;
+}
+
+.sec-4 h1{
+    font-size: 1.25vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.sec-5{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+
+.sec-5 h1{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.sec-6{
+    background-color: black;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+
+.sec-6 h1{
+    font-size: 2vw;
+    font-weight: 500;
+    color:white;
+}
+
+.sec-7{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.7s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.sec-7 h1{
+    font-size: 1.5vw;
+    font-weight: 500;
+} 
