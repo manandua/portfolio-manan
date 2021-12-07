@@ -1,0 +1,119 @@
+<html>
+
+<head>
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <link rel="stylesheet" href="css/style2.css">
+
+    <script src="js/global2.js"></script>
+
+    <title>
+        Think Different Documentation
+    </title>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a id="dua" href='index.html'>dua.</a>
+
+        <div class="other-stuff">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </div>
+
+    <section class="documentation">
+
+        <div class="title">
+
+            <h1> Think Different </h1>
+            <p> Week 6-7 </p>
+        </div>
+
+        <div class="divider"></div>
+
+    </section>
+
+    <section class="section">
+        <p>
+            For this project we were tasked with composing a piece of writing that can be experienced on a browser. I choose Apple's "Think Different" manifesto.</b>
+        </p>
+
+        <img src="./images/2-1.png">
+
+    </section>
+
+
+    <section class="section">
+        <p>
+            Given that this manifesto's text is very inspiring, raw, and powerful, I decided to use colors that showcase that. Moreover, as this is Apple's manifesto, I decided to keep the design simple and clean.
+        </p>
+
+        <img src="./images/2-2.png">
+
+    </section>
+
+
+    <section class="section">
+        <p>
+            The idea for the final design was to make sure that the text flows. The manifesto needed to follow a structure and be expressive enough to showcase what it wants to communicate.
+        </p>
+
+        <img src="./images/2-3.png">
+
+    </section>
+
+
+    <div class="website-footer">
+        <a href="https://github.com/manandua/expressive-text">
+            <p class="link-text"> Click here to visit </p>
+        </a>
+    </div>
+
+
+    <script>
+        $("a[href='#top']").click(function() {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 300);
+            return false;
+        });
+
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.7
+        };
+
+        function observerCallback(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // fade in observed elements that are in view
+                    entry.target.classList.replace('fadeOut', 'fadeIn');
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        const fadeElms = document.querySelectorAll('.fade');
+        fadeElms.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+
+</html>

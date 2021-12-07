@@ -1,0 +1,135 @@
+body {
+    background-color: #121212;
+    font-family: Epilogue;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 30;
+    /* Position the navbar at the top of the page */
+    font-size: 22px;
+    right: 0;
+    left: 0;
+    padding: 14px;
+    z-index: 1000;
+}
+
+#dua {
+    padding-left: 120px;
+    color: white;
+    text-decoration: none;
+}
+
+.other-stuff {
+    display: flex;
+    flex-direction: row;
+}
+
+.documentation {
+    margin: 5vw 120px 0 120px;
+}
+
+.fade {
+    transition: opacity 0.5s ease-in;
+}
+
+.fadeOut {
+    opacity: 0;
+}
+
+.fadeIn {
+    opacity: 1;
+}
+
+.other-stuff a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    padding-right: 120px;
+}
+
+.title {
+    display: block;
+    position: relative;
+}
+
+.title h1 {
+    font-family: Playfair Display;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 5vw;
+}
+
+.title p {
+    font-weight: 300;
+    font-size: 24;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.divider {
+    margin-top: 25px;
+    height: 2px;
+    background-color: white;
+}
+
+.section {
+    margin: 55px 120px 0 120px;
+    display: block;
+}
+
+.section p {
+    color: white;
+    font-size: 1.01vw;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.section img {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin-top: 54px;
+    display: block;
+}
+
+.section video {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin-top: 54px;
+    display: block;
+}
+
+.website-footer {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    display: block;
+    height: 5vw;
+    background-color: #f1f1f1;
+}
+
+.website-footer a {
+    text-decoration: none;
+}
+
+.link-text {
+    font-family: Epilogue;
+    font-size: 1.25vw;
+    font-weight: 800;
+    color: #121212;
+    padding-top: 1.9vw;
+    text-align: center;
+}
